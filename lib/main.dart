@@ -1,3 +1,4 @@
+import 'package:dental_schedule/src/utils/theme/theme.dart';
 import 'package:dental_schedule/src/utils/tmp/tmp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -12,10 +13,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       themeMode: ThemeMode.system,
+      theme: AAppTheme.lightTheme,
+      darkTheme: AAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Center(child: TmpScreen())),
+      home: const Scaffold(body: Center(child: TmpScreen())),
     );
   }
 

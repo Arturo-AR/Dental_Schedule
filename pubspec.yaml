@@ -10,8 +10,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  ## -- ICON PACKAGES
   cupertino_icons: ^1.0.2
+
+  ## -- STATE MANAGEMENT
   get: ^4.6.5
+
+  ## -- GOOGLE PACKAGE
+  google_fonts: ^4.0.4
 
 dev_dependencies:
   flutter_test:
