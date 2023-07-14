@@ -1,25 +1,19 @@
-import 'package:dental_schedule/src/utils/theme/theme.dart';
-import 'package:dental_schedule/src/utils/tmp/tmp_screen.dart';
+import 'package:dental_schedule/app.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+Future<void> main() async {
+  //WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  /// -- README(Update[]) -- GetX Local Storage
+  // Todo: Add Local Storage
 
+  /// -- README(Docs[1]) -- Await Splash until other items Load
+  //FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
-  @override
-  Widget build(BuildContext context) {
-    return GetMaterialApp(
-      themeMode: ThemeMode.system,
-      theme: AAppTheme.lightTheme,
-      darkTheme: AAppTheme.darkTheme,
-      debugShowCheckedModeBanner: false,
-      home: const Scaffold(body: Center(child: TmpScreen())),
-    );
-  }
+  /// -- README(Docs[2]) -- Initialize Firebase & Authentication Repository
+  /*await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
+      .then((_) => Get.put(AuthenticationRepository()));*/
 
+  /// -- Main App Starts here (app.dart) ...
+  runApp(const App());
 }
