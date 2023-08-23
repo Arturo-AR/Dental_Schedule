@@ -1,6 +1,6 @@
+import 'package:dental_schedule/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:dental_schedule/src/utils/app_bindings.dart';
 import 'package:dental_schedule/src/utils/theme/theme.dart';
-import 'package:dental_schedule/src/utils/tmp/tmp_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,7 +16,7 @@ class App extends StatelessWidget {
       theme: AAppTheme.lightTheme,
       darkTheme: AAppTheme.darkTheme,
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(body: Center(child: TmpScreen())),
+      home: Scaffold(body: Center(child: SplashScreen())),
     );
   }
 }

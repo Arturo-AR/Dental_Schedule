@@ -1,5 +1,6 @@
 import 'package:dental_schedule/src/common_widgets/button/primary_button.dart';
 import 'package:dental_schedule/src/constants/text_strings.dart';
+import 'package:dental_schedule/src/features/core/screens/calendar/calendar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
@@ -66,7 +67,9 @@ class LoginFormWidget extends StatelessWidget {
                   /*() => */APrimaryButton(
                 //isLoading: controller.isLoading.value ? true : false,
                 text: aLogin.tr,
-                onPressed: () {}/*controller.isFacebookLoading.value || controller.isGoogleLoading.value
+                onPressed: () {
+                  Get.off(const CalendarScreen());
+                }/*controller.isFacebookLoading.value || controller.isGoogleLoading.value
                     ? () {}
                     : controller.isLoading.value
                     ? () {}

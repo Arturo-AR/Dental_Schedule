@@ -26,7 +26,7 @@ class TmpScreensScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text("Screens"),
-              ElevatedButton(onPressed: () => Get.to(() => const SplashScreen()), child: const Text("Splash")),
+              ElevatedButton(onPressed: () => Get.to(() => SplashScreen()), child: const Text("Splash")),
               ElevatedButton(onPressed: () => Get.to(() => const LoginScreen()), child: const Text("Login")),
               ElevatedButton(onPressed: () => Get.to(() => const SignupScreen()), child: const Text("SignUp")),
               ElevatedButton(onPressed: () => Get.to(() => const CalendarScreen()), child: const Text("Calendar")),

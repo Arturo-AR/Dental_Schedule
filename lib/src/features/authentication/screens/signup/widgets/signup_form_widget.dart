@@ -1,5 +1,6 @@
 import 'package:dental_schedule/src/common_widgets/button/primary_button.dart';
 import 'package:dental_schedule/src/constants/text_strings.dart';
+import 'package:dental_schedule/src/features/core/screens/calendar/calendar_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
@@ -22,55 +23,66 @@ class SignUpFormWidget extends StatelessWidget {
             TextFormField(
               //controller: controller.fullName,
               validator: (value) {
-                if(value!.isEmpty) return 'Name cannot be empty';
+                if (value!.isEmpty) return 'Name cannot be empty';
                 return null;
               },
-              decoration: const InputDecoration(label: Text(aFullName), prefixIcon: Icon(LineAwesomeIcons.user)),
+              decoration: const InputDecoration(
+                  label: Text(aFullName),
+                  prefixIcon: Icon(LineAwesomeIcons.user)),
             ),
             const SizedBox(height: 30 - 20),
             TextFormField(
               //controller: controller.email,
               //validator: Helper.validateEmail,
-              decoration: const InputDecoration(label: Text(aEmail), prefixIcon: Icon(LineAwesomeIcons.envelope)),
+              decoration: const InputDecoration(
+                  label: Text(aEmail),
+                  prefixIcon: Icon(LineAwesomeIcons.envelope)),
             ),
             const SizedBox(height: 30 - 20),
             TextFormField(
               //controller: controller.phoneNo,
               validator: (value) {
-                if(value!.isEmpty) return 'Phone number cannot be empty';
+                if (value!.isEmpty) return 'Phone number cannot be empty';
                 return null;
               },
-              decoration: const InputDecoration(label: Text(aPhoneNo), prefixIcon: Icon(LineAwesomeIcons.phone)),
+              decoration: const InputDecoration(
+                  label: Text(aPhoneNo),
+                  prefixIcon: Icon(LineAwesomeIcons.phone)),
             ),
             const SizedBox(height: 30 - 20),
             //Obx(
-                  /*() => */TextFormField(
-                //controller: controller.password,
-                //validator: Helper.validatePassword,
-                //obscureText: controller.showPassword.value ? false : true,
-                decoration: InputDecoration(
-                  label: const Text(aPassword),
-                  prefixIcon: const Icon(Icons.fingerprint),
-                  suffixIcon: IconButton(
-                    icon: const Icon(LineAwesomeIcons.eye)/*controller.showPassword.value
+            /*() => */ TextFormField(
+              //controller: controller.password,
+              //validator: Helper.validatePassword,
+              //obscureText: controller.showPassword.value ? false : true,
+              decoration: InputDecoration(
+                label: const Text(aPassword),
+                prefixIcon: const Icon(Icons.fingerprint),
+                suffixIcon: IconButton(
+                  icon: const Icon(LineAwesomeIcons
+                      .eye) /*controller.showPassword.value
                         ? const Icon(LineAwesomeIcons.eye)
-                        : const Icon(LineAwesomeIcons.eye_slash)*/,
-                    onPressed: () {}/*=> controller.showPassword.value = !controller.showPassword.value*/,
-                  ),
+                        : const Icon(LineAwesomeIcons.eye_slash)*/
+                  ,
+                  onPressed:
+                      () {} /*=> controller.showPassword.value = !controller.showPassword.value*/,
                 ),
               ),
+            ),
             //),
             const SizedBox(height: 30 - 10),
             //Obx(
-                  /*() => */APrimaryButton(
-                //isLoading: controller.isLoading.value ? true : false,
-                text: aSignup.tr,
-                onPressed: (){}/*controller.isFacebookLoading.value || controller.isGoogleLoading.value
+            /*() => */ APrimaryButton(
+              //isLoading: controller.isLoading.value ? true : false,
+              text: aSignup.tr,
+              onPressed: () => Get.off(() => const CalendarScreen())
+              /*controller.isFacebookLoading.value || controller.isGoogleLoading.value
                     ? () {}
                     : controller.isLoading.value
                     ? () {}
-                    : () => controller.createUser()*/,
-              ),
+                    : () => controller.createUser()*/
+              ,
+            ),
             //),
           ],
         ),

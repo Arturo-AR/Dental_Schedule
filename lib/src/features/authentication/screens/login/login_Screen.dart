@@ -5,7 +5,9 @@ import 'package:dental_schedule/src/constants/colors.dart';
 import 'package:dental_schedule/src/constants/images_strings.dart';
 import 'package:dental_schedule/src/constants/text_strings.dart';
 import 'package:dental_schedule/src/features/authentication/screens/login/widgets/login_form_widget.dart';
+import 'package:dental_schedule/src/features/authentication/screens/signup/signup_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -34,7 +36,10 @@ class LoginScreen extends StatelessWidget {
                   const FormHeaderWidget(image: aAppLogoBlue, title: aAppName),
                   const LoginFormWidget(),
                   const TFormDividerWidget(),
-                  SocialFooter(text1: aDontHaveAnAccount, text2: aSignup, onPressed: () {}/*=> Get.off(() => const SignupScreen())*/),
+                  SocialFooter(
+                      text1: aDontHaveAnAccount,
+                      text2: aSignup,
+                      onPressed: () => Get.off(() => const SignupScreen())),
                 ],
               ),
             ),
