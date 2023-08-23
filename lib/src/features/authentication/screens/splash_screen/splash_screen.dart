@@ -9,12 +9,14 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return const Scaffold(
-      backgroundColor: aPrimaryColor,
+    var mediaQuery = MediaQuery.of(context);
+    var brightness = mediaQuery.platformBrightness;
+    final isDarkMode = brightness == Brightness.dark;
+    return Scaffold(
+      backgroundColor: isDarkMode ? aDarkColor : aPrimaryColor,
       body: Center(
         child:
-          Expanded(child: Image(image: AssetImage(aAppLogoWhite))),
+          Expanded(child: Image(image: AssetImage(isDarkMode ? aAppLogoBlue: aAppLogoWhite))),
       ),
     );
   }
