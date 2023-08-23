@@ -1,4 +1,5 @@
 /* -- Light & Dark Outlined Button Themes -- */
+import 'package:dental_schedule/src/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 class AOutlinedButtonTheme {
@@ -7,21 +8,21 @@ class AOutlinedButtonTheme {
 
   /* -- Light Theme -- */
   static final lightOutlinedButtonTheme  = OutlinedButtonThemeData(
-    /*style: OutlinedButton.styleFrom(
-      foregroundColor: tSecondaryColor,
-      side: const BorderSide(color: tSecondaryColor),
-      padding: const EdgeInsets.symmetric(vertical: tButtonHeight),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(tBorderRadius)),
-    ),*/
+    style: OutlinedButton.styleFrom(
+      foregroundColor: aSecondaryColor,
+      side: const BorderSide(color: aSecondaryColor),
+      padding: const EdgeInsets.symmetric(vertical: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+    ),
   );
 
   /* -- Dark Theme -- */
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
-    /*style: OutlinedButton.styleFrom(
-      foregroundColor: tWhiteColor,
-      side: const BorderSide(color: tWhiteColor),
-      padding: const EdgeInsets.symmetric(vertical: tButtonHeight),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(tBorderRadius)),
-    ),*/
+    style: OutlinedButton.styleFrom(
+      foregroundColor: aWhiteColor,
+      side: const BorderSide(color: aWhiteColor),
+      padding: const EdgeInsets.symmetric(vertical: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+    ),
   );
 }

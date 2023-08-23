@@ -19,6 +19,7 @@ dependencies:
 
   ## -- GOOGLE PACKAGE
   google_fonts: ^4.0.4
+  line_awesome_flutter: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -30,3 +31,4 @@ flutter:
   assets:
     - assets/images/
     - assets/logo/app/
+    - assets/logo/
