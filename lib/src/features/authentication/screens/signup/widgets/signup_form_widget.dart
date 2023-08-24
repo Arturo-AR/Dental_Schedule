@@ -75,7 +75,7 @@ class SignUpFormWidget extends StatelessWidget {
             /*() => */ APrimaryButton(
               //isLoading: controller.isLoading.value ? true : false,
               text: aSignup.tr,
-              onPressed: () => Get.off(() => const CalendarScreen())
+              onPressed: () => Get.off(() => CalendarScreen())
               /*controller.isFacebookLoading.value || controller.isGoogleLoading.value
                     ? () {}
                     : controller.isLoading.value

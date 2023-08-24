@@ -29,7 +29,7 @@ class TmpScreensScreen extends StatelessWidget {
               ElevatedButton(onPressed: () => Get.to(() => SplashScreen()), child: const Text("Splash")),
               ElevatedButton(onPressed: () => Get.to(() => const LoginScreen()), child: const Text("Login")),
               ElevatedButton(onPressed: () => Get.to(() => const SignupScreen()), child: const Text("SignUp")),
-              ElevatedButton(onPressed: () => Get.to(() => const CalendarScreen()), child: const Text("Calendar")),
+              ElevatedButton(onPressed: () => Get.to(() => CalendarScreen()), child: const Text("Calendar")),
               ElevatedButton(onPressed: () => Get.to(() => const PatientsListScreen()), child: const Text("Patients List")),
               ElevatedButton(onPressed: () => Get.to(() => const PatientDetailsScreen()), child: const Text("Patient Detail")),
               ElevatedButton(onPressed: () => Get.to(() => const AddAppointmentScreen()), child: const Text("Add Appointment")),

@@ -68,7 +68,7 @@ class LoginFormWidget extends StatelessWidget {
                 //isLoading: controller.isLoading.value ? true : false,
                 text: aLogin.tr,
                 onPressed: () {
-                  Get.off(const CalendarScreen());
+                  Get.off (CalendarScreen());
                 }/*controller.isFacebookLoading.value || controller.isGoogleLoading.value
                     ? () {}
                     : controller.isLoading.value

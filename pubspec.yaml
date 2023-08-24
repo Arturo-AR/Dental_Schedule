@@ -13,13 +13,16 @@ dependencies:
 
   ## -- ICON PACKAGES
   cupertino_icons: ^1.0.2
+  line_awesome_flutter: ^2.0.0
 
   ## -- STATE MANAGEMENT
   get: ^4.6.5
 
   ## -- GOOGLE PACKAGE
   google_fonts: ^4.0.4
-  line_awesome_flutter: ^2.0.0
+
+  ## -- CALENDAR PACKAGE
+  table_calendar: ^3.0.9
 
 dev_dependencies:
   flutter_test:
