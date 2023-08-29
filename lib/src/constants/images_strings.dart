@@ -18,3 +18,7 @@ const String aLogoImage = "assets/images/profile/logo.png";
 // -- SOCIAL Images
 const String aFacebookLogo = "assets/logo/facebook-logo.png";
 const String aGoogleLogo = "assets/logo/google-logo.png";
+
+// -- Tmp Images
+const String aProfileImage = "assets/images/tmp/profile_image.jpeg";
+const String aHeaderBg = "assets/images/tmp/drawer_header_bg.jpg";
